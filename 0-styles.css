@@ -16,7 +16,7 @@ li {
     border: 3px solid #999;
     border-radius: 13px;
     background-color: #f7f7f7;
-    background-image: url(/images/0-sprite.png);
+    background-image: url(./images/0-sprite.png);
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position: center;
