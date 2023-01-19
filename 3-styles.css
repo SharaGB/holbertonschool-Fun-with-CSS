@@ -1,0 +1,109 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.menu-open {
+    display: none;
+    position: absolute;
+}
+
+.menu-open-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    background-color: #db2748;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-line {
+    width: 40%;
+    height: 4px;
+    margin: 2px auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.menu-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #db2748;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #db2748;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.fa {
+    font-size: 2rem;
+}
+
+.menu-item:hover {
+    background-color: #fff;
+    color: #db2748;
+}
+
+.menu-open-button:hover {
+    transform: scale(1.10);
+    transition-duration: 0.5s;
+}
+
+.menu-open:checked~.menu-open-button {
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.menu-open:checked~.menu-open-button .menu-line-1,
+.menu-open:checked~.menu-open-button .menu-line-3 {
+    width: 35%;
+    top: 45%;
+    position: absolute;
+    transform: translate(0, -50%);
+
+}
+
+.menu-open:checked~.menu-open-button .menu-line-2 {
+    background: transparent;
+}
+
+.menu-open:checked~.menu-open-button .menu-line-1 {
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+}
+
+.menu-open:checked~.menu-open-button .menu-line-3 {
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+}
+
+.menu-open:checked~.menu-item:nth-child(3) {
+    transform: translateY(120px);
+}
+
+.menu-open:checked~.menu-item:nth-child(4) {
+    transform: translateY(220px);
+}
+
+.menu-open:checked~.menu-item:nth-child(5) {
+    transform: translateY(320px);
+}
+
+.menu-open:checked~.menu-item:nth-child(6) {
+    transform: translateY(420px);
+}
+
+.menu-open:checked~.menu-item:nth-child(7) {
+    transform: translateY(520px);
+}

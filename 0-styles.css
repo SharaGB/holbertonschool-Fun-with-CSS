@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 4.5rem;
+}
+
+li {
+    width: 14rem;
+    height: 23rem;
+    margin: 2rem 1.2rem;
+    padding: 1rem;
+    border: 3px solid #999;
+    border-radius: 13px;
+    background-color: #f7f7f7;
+    background-image: url(/images/0-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: center;
+}
+
+li:first-child {
+    background-position: 1.5rem;
+}
+
+li:last-child {
+    background-position: -25.5rem;
+}
