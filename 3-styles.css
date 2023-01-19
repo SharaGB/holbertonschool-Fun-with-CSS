@@ -18,6 +18,7 @@
     width: 88px;
     height: 88px;
     background-color: #db2748;
+    border: 1px solid #9b1128;
     border-radius: 50%;
     cursor: pointer;
     z-index: 1;
@@ -32,15 +33,14 @@
 }
 
 .menu-item {
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: #db2748;
     width: 68px;
     height: 68px;
-    border: 1px solid #db2748;
+    background-color: #db2748;
+    border: 1px solid #9b1128;
     border-radius: 50%;
     color: #fff;
     transition: 0.5s;
